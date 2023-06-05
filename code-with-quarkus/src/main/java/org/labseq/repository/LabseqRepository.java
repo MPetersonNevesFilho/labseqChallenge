@@ -11,24 +11,39 @@ public class LabseqRepository {
         put("2", BigInteger.valueOf(0));
         put("3", BigInteger.valueOf(1));
     }};
+    private Integer requestN = 0;
+
 
 
     public LabseqRepository() {
     }
 
+    public BigInteger returnValue (String key) {
+        requestN = Integer.parseInt(key);
+        BigInteger result = getValue(key);
+        //System.out.println(labseqMemory);
+        return result;
+    }
 
     public BigInteger getValue(String key) {
         while (!labseqMemory.containsKey(key)) {
             labseqMemory.put(key, calculateValue(key));
-            //System.out.println("labseqMemory: " + labseqMemory);
         }
         return labseqMemory.get(key);
     }
 
     private BigInteger calculateValue(String key) {
-        BigInteger nMinusFour = getValue(String.valueOf(Long.parseLong(key)-4));
-        BigInteger nMinusThree = getValue(String.valueOf(Long.parseLong(key)-3));
-        return nMinusFour.add(nMinusThree);
+        return getValue(
+            String.valueOf(
+                Long.parseLong(key)-4
+                )
+            ).add(
+                getValue(
+                    String.valueOf(
+                        Long.parseLong(key)-3
+                        )
+                    )
+                );
     }
 
 }
