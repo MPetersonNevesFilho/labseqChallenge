@@ -7,9 +7,9 @@ import jakarta.enterprise.context.ApplicationScoped;
 @ApplicationScoped
 public class LabseqService {
 
-    private LabseqRepository labseqRepository;
+    private LabseqRepository labseqRepository = new LabseqRepository();
 
-    public Integer getValue(String key) {
+    public Long getValue(String key) {
         return labseqRepository.getValue(key);
     }
 
