@@ -1,5 +1,7 @@
 package org.labseq.service;
 
+import java.math.BigInteger;
+
 import org.labseq.repository.LabseqRepository;
 
 import jakarta.enterprise.context.ApplicationScoped;
@@ -9,7 +11,7 @@ public class LabseqService {
 
     private LabseqRepository labseqRepository = new LabseqRepository();
 
-    public Long getValue(String key) {
+    public BigInteger getValue(String key) {
         return labseqRepository.getValue(key);
     }
 

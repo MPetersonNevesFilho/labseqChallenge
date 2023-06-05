@@ -12,7 +12,7 @@ public class LabseqController {
     private LabseqService LabseqService = new LabseqService();
 
     @GET
-    public Long getValue(@PathParam("n") String n) {
-        return LabseqService.getValue(n);
+    public String getValue(@PathParam("n") String n) {
+        return String.valueOf(LabseqService.getValue(n));
     }
 }
