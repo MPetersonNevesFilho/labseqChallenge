@@ -40,10 +40,11 @@ To run the project your machine needs to have some software installed to be used
 ```bash
 mvn package
 ```
-3. In the same directory, build and run the docker image
+3. Run your docker
+4. In the same directory, build and run the docker image
 ```bash
 docker build -f src/main/docker/Dockerfile.jvm -t quarkus/code-with-quarkus-jvm .
 docker run -i --rm -p 8080:8080 quarkus/code-with-quarkus-jvm
 ```
-4. After the docker are up and running, access the [URL Localhost on port 8080](http://localhost:8080/)
-5. Now you can make requests through the front-end, choose a value of N.
+5. After the docker are up and running, access the [URL Localhost on port 8080](http://localhost:8080/)
+6. Now you can make requests through the front-end, choose a value of N.
