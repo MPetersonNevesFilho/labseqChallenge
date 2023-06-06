@@ -1,7 +1,5 @@
 package org.labseq.service;
 
-import java.math.BigInteger;
-
 import org.labseq.repository.LabseqRepository;
 
 public class LabseqService {
