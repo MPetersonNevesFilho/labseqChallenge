@@ -36,14 +36,14 @@ To run the project your machine needs to have some software installed to be used
 
 ### Turn on
 1. Clone the repository yo tour local machine.
-2. Navigate to the back-end directory and run the following command in your terminal to make file.jar with the project
+2. Navigate to the back-end directory and run the following command in your terminal to make file.jar with the project.
 ```bash
 mvn package -DskipTests
 ```
-3. Run your docker
-4. In the same directory, build and run the docker image using docker-compose
+3. Run your docker.
+4. In the same directory, build and run the docker image using docker-compose.
 ```bash
 docker-compose up
 ```
-5. After the docker are up and running, access the [URL Localhost on port 8080](http://localhost:8080/)
+5. After the docker are up and running, access the [URL Localhost on port 8080](http://localhost:8080/).
 6. Now you can make requests through the front-end, choose a value of N.
