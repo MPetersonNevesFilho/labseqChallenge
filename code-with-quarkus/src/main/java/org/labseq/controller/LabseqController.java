@@ -12,6 +12,7 @@ public class LabseqController {
 
     private LabseqService LabseqService = new LabseqService();
 
+
     @GET
     @Path("/{n}")
     public String getValue(@PathParam("n") String n) {
