@@ -1,0 +1,48 @@
+/*Make the div stay on bottom page*/
+.signatureMain{
+    bottom: 1em;
+    position: fixed;
+    width: 96%;
+    height: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signatureContainer{
+    margin: 0 auto;
+    padding: 0.9em;
+    position: fixed;
+    bottom: 1em;
+    width: 17em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    background-color: #f4f2f2;
+    border-radius: 2em;
+}
+
+.signatureText{
+    font-size: 1.1em;
+    min-width: 1em;
+    font-weight: 600;
+    color: #003a88;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: -0.5em;
+}
+
+.signatureLinks img{
+    width: 3em;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.gitImg{
+    margin-left: 1em;
+}
